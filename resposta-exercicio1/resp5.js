@@ -3,4 +3,4 @@ const valorconverte = parseFloat(prompt('Valor em Metros'));
 //converte Metro em Centímetro
 let valor = valorconverte * 100;
 //Mostra o Resultado
-alert(valor + " centímetros");
+alert(valorconverte + "m correspondem a " + valor + 'cm');
