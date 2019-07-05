@@ -1,31 +1,19 @@
-//Solicita os valores para verificação
-let num1 = parseFloat(prompt('Digite o 1º numero!'));
-let num2 = parseFloat(prompt('Digite o 2º numero!'));
-let num3 = parseFloat(prompt('Digite o 3º numero!'));
+//Valores para verificação
+let num1 = parseFloat(prompt('Digite o 1º Número'));
+let maior = num1;
+let menor = num1;
 
-let valor;
-
-//verifica e atribui os valores nas variaveis auxiliares
-if (num1 > num2) {
-    valor = num1;
-    num1 = num2;
-    num2 = valor;
+let num2 = parseFloat(prompt('Digite o 2º Número'));
+if (num2 > maior) {
+    maior = num2;
+} else {
+    menor = num2;
 }
 
-if (num2 > num3) {
-    valor = num2;
-    num2 = num3;
-    num3 = valor;
-
+let num3 = parseFloat(prompt('Digite o 3º Número'));
+if (num3 > maior) {
+    maior = num3;
+} else if (num3 < menor) {
+    menor = num3;
 }
-
-if (num1 > num2) {
-    valor = num1;
-    num1 = num2;
-    num2 = valor;
-}
-//Exibe qual número é maior e menor
-alert('O Maior é: ' + num3 + ' e o menor é: ' + num1);
-
-
-
+alert('Maior:' + maior + '\nMenor: ' + menor);

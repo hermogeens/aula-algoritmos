@@ -1,28 +1,23 @@
 //Solicita os valores
-let num1 = parseFloat(prompt('Digite o 1º Numero!'));
-let num2 = parseFloat(prompt('Digite o 2º Numero!'));
-let num3 = parseFloat(prompt('Digite o 3º Numero!'));
+let valorA = parseFloat(prompt('Informe o número 1'));
+let valorB = parseFloat(prompt('Informe o número 2'));
+let valorC = parseFloat(prompt('Informe o número 3'));
 
+let valor = 0;
 
-let valor
-
-if (num1 > num2) {
-    valor = num1;
-    num1 = num2;
-    num2 = valor;
+if (valorA > valorB) {
+    valor = valorA;
+    valorA = valorB;
+    valorB = valor;
 }
-
-if (num2 > num3) {
-    valor = num2;
-    num2 = num3;
-    num3 = valor;
-
+if (valorB > valorC) {
+    valor = valorB;
+    valorB = valorC;
+    valorC = valor;
 }
-
-if (num1 > num2) {
-    valor = num1;
-    num1 = num2;
-    num2 = valor;
+if (valorA > valorB) {
+    valor = valorA;
+    valorA = valorB;
+    valorB = valor;
 }
-
-alert('Ordem descrecente: ' + num3 + ' - ' + num2 + ' - ' + num1);
+alert('Ordem descrecente: ' + valorC + ' - ' + valorB + ' - ' + valorA);
