@@ -8,3 +8,4 @@ if (numero < 0) {
 } else {
    alert('Valor inválido')
 }
+//não compativel com o switch devido a verificação de maior ou menor.

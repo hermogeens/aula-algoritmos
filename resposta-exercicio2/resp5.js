@@ -13,3 +13,4 @@ if (isNaN(media) || media < 0 || media > 10) {
     resposta ='Aprovado';
 } 
 alert(resposta);
+//não compativel com o switch devido a verificação de maior ou menor.

@@ -9,3 +9,4 @@ if (num1 > num2) {
 } else {
    alert('Repita a operação')
 }
+//não compativel com o switch devido a verificação de maior ou menor.

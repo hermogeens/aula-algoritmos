@@ -11,3 +11,4 @@ if (num3 > maior) {
 }
 
 alert(maior);
+//não compativel com o switch devido a verificação de maior ou menor.

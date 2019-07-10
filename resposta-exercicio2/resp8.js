@@ -17,3 +17,4 @@ if (produtoC < menor) {
 }
 
 alert('Melhor preço: ' + menor + '\nProduto Recomendado: ' + recomendacao);
+//não compativel com o switch devido a verificação de maior ou menor.

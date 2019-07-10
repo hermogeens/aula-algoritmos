@@ -17,3 +17,4 @@ if (num3 > maior) {
     menor = num3;
 }
 alert('Maior:' + maior + '\nMenor: ' + menor);
+//não compativel com o switch devido a verificação de maior ou menor.
