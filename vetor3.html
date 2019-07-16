@@ -1,0 +1,21 @@
+<html>
+<script>
+    let alunos = new Array(5);
+
+    for (let i = 0; i < alunos.length; i++) {
+        alunos[i] = new Array(2);
+        alunos[i][0] = prompt('Informe o aluno ' + i);
+        alunos[i][1] = prompt('Informe a nota ' + i);
+
+    } 
+    for (let i = 0;i < alunos.length;i++) {
+        for (let k = 0; k < alunos[i].length;k++){
+            alert(alunos[i][k]);
+        }
+    }
+
+
+
+</script>
+
+</html>

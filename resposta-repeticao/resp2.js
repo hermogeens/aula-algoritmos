@@ -3,6 +3,7 @@ var usuario = prompt('Entre com o seu usuario.');//Recebe o nome do usuario e ar
 var senha = prompt('Entre com a Senha.');// Recebe a senha e armazena na variavel senha.
 var i = 0;
 //Inicia o laço para verificação se a senha é igual ao usuario
+// Realiza o laço sem utilizar a variavel de inicializaçãoe (i) e expressão final (i++).
 for (i;usuario == senha; i++) {
     alert('Senha igual a usuario! Insira uma senha diferente.');// caso a senha seja igual ao usuario, exibe um alerta.
     var usuario = prompt('Entre com o seu usuario.');//Recebe o usuario para nova verificação.

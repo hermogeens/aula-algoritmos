@@ -8,14 +8,13 @@ var b = 200000;
 const taxaA = 3 / 100;
 const taxaB = 1.5 / 100;
 
-var ano = 0;
+var ano = 1
 
-for (var i = 1; i < 100; i++) {
+while (a <= b) {
     a += a * taxaA;
     b += b * taxaB;
-    if (a >= b) {
-        ano = i;
-        break;
+    if (a <= b) {
+        ano += 1 ;
     }
 }
 alert('População A : ' + a + '\n'
@@ -23,16 +22,4 @@ alert('População A : ' + a + '\n'
     + 'Quantidade de Anos: ' + ano
  )
 
-/* var a = 80000;
-var b = 200000;
-var ano = 0;
-for (var i = 0; i < 100; i++) {
-    if (a <= b) {
-        a += a * 0.03
-        b += b * 0.015
-        ano += 1
-        break;
-    }
-}
-
-alert('A ultrapassa ou iguala a B em ' + ano + ' Ano(s)');*/
+//Exibe alerta com os anos necessários para que a população do país A ultrapasse ou iguale a população do país B, mantidas as taxas de crescimento.

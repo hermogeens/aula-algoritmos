@@ -2,19 +2,18 @@
 var a = parseInt(prompt('Informe a População A'));
 var b = parseInt(prompt('Informe a População B'));
 
-const taxaA = parseFloat(prompt('Informa a Taxa de A'));
-const taxaB = parseFloat(prompt('Informa a Taxa de B'));
+var taxaA = parseFloat(prompt('Informa a Taxa de A'));
+var taxaB = parseFloat(prompt('Informa a Taxa de B'));
 var tA = taxaA/100;
 var tB = taxaB/100;
 
-var ano = 0;
+var ano = 1
 
-for (var i = 1; i < 100; i++) {
-    a += a * tA;
-    b += b * tB;
-    if (a >= b) {
-        ano = i;
-        break;
+while (a <= b) {
+    a += a * taxaA;
+    b += b * taxaB;
+    if (a <= b) {
+        ano += 1 ;
     }
 }
 alert('População A : ' + a + '\n'
