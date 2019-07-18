@@ -1,23 +1,25 @@
 function calcular() {
-let numero1 = document.getElementById('valor1').Value;
- if (ehNumero(numero1)){
-     numero1 = parseInt(numero1);
- } else{
-     let mensagem = 'Campo 1 deve ser número';
-     document.getElementById('mensagem').innerHTML = mensagem;
- }
+    let numero1 = document.getElementById('valor1').value;
+    numero1 = validaCampo(numero1, 'mensagem1','Campo 1 deve ser Número');
+    let numero2 = document.getElementById('valor2').value;
+    numero2 = validaCampo(numero2, 'mensagem2','Campo 2 deve ser Número');
 
-let numero2 = document.getElementById('valor2').Value;
-numero2 = parseInt(numero2);
+    let resultado = numero1 + numero2;
 
-let resultado = numero1 + numero2;
-
-document.getElementById('resultado').Value = resultado;
+    document.getElementById('resultado').value = resultado;
 }
 
-function ehNumero(numero){
+function ehNumero(numero) {
     return !isNaN(numero);
 }
 
 
-
+function validaCampo(valor,id, mensagem) {
+    if (ehNumero(valor)) {
+        valor = parseInt(valor);
+        return valor;
+    } else {
+        document.getElementById(id).style.color = 'red';
+        document.getElementById(id).innerHTML = mensagem;
+    } return 0;
+}
